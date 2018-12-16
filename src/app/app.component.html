@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app__contain col-xs-12">
+  <h1>Button Masher 3000</h1>
+  <div class="addRemove__container">
+    <button class="btn btn-success" (click)="addRemoveClick('add')" role="button">MORE BUTTONS!</button>
+    <button class="btn btn-danger" (click)="addRemoveClick('remove')" role="button">FEWER BUTTONS!</button>
+  </div>
+  <app-button class="col-xs-10 col-md-6" *ngFor="let button of buttons" [button]="button"></app-button>
+  <div class="space">
+    <p>Scrolled Too Far!</p>
+  </div>
+</div>

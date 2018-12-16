@@ -1,0 +1,5 @@
+<div class="button__box" [style.backgroundImage]="bgImage">
+    <app-tooltip class="appToolTip" [button]="button">
+    </app-tooltip>
+    <button class="btn btn-warning" [id]="buttonId" (click)="onClick($event)" role="button">{{ button.name }}</button>
+</div>

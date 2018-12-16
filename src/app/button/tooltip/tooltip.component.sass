@@ -1,0 +1,46 @@
+$toolColor: #eee
+
+.show 
+    opacity: 1
+    transition: opacity 300ms ease-in-out
+    z-index: 9
+
+.tooltip
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 200px
+    background-color: $toolColor
+    padding: 10px
+    text-align: center
+    z-index: 1
+    border-radius: 5px
+    font-size: 1.2em
+    border: 1px solid #665
+
+.top 
+    top: 25%
+
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        transform: translateY(50%) rotate(45deg)
+        right: 47%
+        width: 10px
+        height: 10px
+        background: $toolColor
+        z-index: -1
+
+.bottom 
+    top: 75%
+
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        transform: translateY(-50%) rotate(45deg)
+        right: 47%
+        width: 10px
+        height: 10px
+        background: $toolColor
+        z-index: -1
